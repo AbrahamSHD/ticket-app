@@ -2,7 +2,7 @@
 
 function connectToWebSockets() {
 
-  const socket = new WebSocket( 'ws://localhost:3000/ws' );
+  const socket = new WebSocket( `ws://${ envs.PORT }/ws` );
 
   socket.onmessage = ( event ) => {
     console.log(event.data);

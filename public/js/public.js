@@ -1,3 +1,4 @@
+import { envs } from '../../src/config/envs'
 
 function renderTickets( tickets = [] ) {
   for( let i = 0; i < tickets.length; i++ ){
@@ -22,7 +23,7 @@ async function loadCurrentTickets() {
 
 function connectToWebSockets() {
 
-  const socket = new WebSocket( 'ws://localhost:3000/ws' );
+  const socket = new WebSocket( `ws://${ envs.PORT }/ws` );
 
   socket.onmessage = ( event ) => {
     // console.log(event.data); // on-working-changed
