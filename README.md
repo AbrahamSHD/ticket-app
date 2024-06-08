@@ -1,6 +1,6 @@
 # Rest Project + TypeScript
 
-Este proyecto previamente inicializado tiene todo lo necesario para trabajar con TypeScript, Express y Rest.
+Este proyecto se trata de un sistema de colas que trabaja con TypeScript, Express y Rest.
 
 ## Instalación
 
