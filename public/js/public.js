@@ -23,7 +23,7 @@ async function loadCurrentTickets() {
 
 function connectToWebSockets() {
 
-  const socket = new WebSocket( `ws://${ envs.PORT }/ws` );
+  const socket = new WebSocket( `${ envs.URL }` );
 
   socket.onmessage = ( event ) => {
     // console.log(event.data); // on-working-changed
